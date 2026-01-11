@@ -18,6 +18,7 @@ function GradientBackground({
     transition = { duration: 20, ease: 'easeInOut', repeat: Infinity },
     ...props
 }: GradientBackgroundProps) {
+    // ['0% 75%', '75% 75%', '75% 0%', '0% 75%']
     return (
         <motion.div
             data-slot='gradient-background'
@@ -26,7 +27,7 @@ function GradientBackground({
                 animated
                     ? {
                           //   backgroundPosition: ['0% 50%', '100% 50%', '0% 50%'],
-                          backgroundPosition: ['0% 25%', '25% 25%', '25% 50%', '50% 50%', '75% 50%', '100% 50%', '75% 50%', '50% 75%', '50% 100%', '25% 75%', '0% 50%', '0% 25%'],
+                          backgroundPosition: ['0% 75%', '75% 55%', '75% 0%', '0% 75%'],
                       }
                     : {}
             }

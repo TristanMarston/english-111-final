@@ -10,6 +10,7 @@
 @theme inline {
     --font-figtree: var(--font-figtree), sans-serif;
     --font-fascinate: var(--font-fascinate), sans-serif;
+    --font-nunito: var(--font-nunito), sans-serif;
 
     --color-primary: var(--primary);
     --color-primary-light: var(--primary-light);
@@ -45,4 +46,8 @@
 .primary-dark-border-hover:hover {
     translate: 2.5px 2.5px 0;
     box-shadow: none;
+}
+
+.svg-filter-white {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(3614%) hue-rotate(195deg) brightness(122%) contrast(100%);
 }

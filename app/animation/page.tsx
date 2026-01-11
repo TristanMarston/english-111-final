@@ -99,7 +99,7 @@ const page = () => {
         const svgWidth = svgRef.current?.clientWidth;
         const svgHeight = svgRef.current?.clientHeight;
         if (!svgWidth || !svgHeight) return;
-        setAnimationSpeed(1.5);
+        setAnimationSpeed(2.5);
 
         const startX = (width - svgWidth) / 2;
         const startY = (height - svgHeight) / 2;
@@ -177,7 +177,7 @@ const page = () => {
 
 const PointElement = ({ point, index, animationSpeed }: { point: Point; index: number; animationSpeed: number }) => {
     return (
-        <motion.div className='w-1 h-1 rounded-full absolute' animate={{ left: point.x, top: point.y }} transition={{ duration: animationSpeed, ease: 'easeInOut' }}>
+        <motion.div className='w-1 h-1 rounded-full absolute' animate={{ left: point.x, top: point.y }} transition={{ duration: animationSpeed, type: 'spring', bounce: 0.05 }}>
             <motion.div
                 className='w-1 h-1 absolute bg-white/80 rounded-full'
                 initial={{ opacity: 0 }}

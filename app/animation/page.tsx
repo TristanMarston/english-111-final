@@ -99,7 +99,7 @@ const page = () => {
         const svgWidth = svgRef.current?.clientWidth;
         const svgHeight = svgRef.current?.clientHeight;
         if (!svgWidth || !svgHeight) return;
-        setAnimationSpeed(2.5);
+        setAnimationSpeed(5);
 
         const startX = (width - svgWidth) / 2;
         const startY = (height - svgHeight) / 2;

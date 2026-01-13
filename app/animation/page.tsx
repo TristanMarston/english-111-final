@@ -20,8 +20,8 @@ export const HELMET_VIEW_X = 512;
 export const HELMET_VIEW_Y = 976;
 export const LYRE_VIEW_X = 688;
 export const LYRE_VIEW_Y = 688;
-export const GRAVESTONES_VIEW_X = 688;
-export const GRAVESTONES_VIEW_Y = 512;
+export const GRAVESTONES_VIEW_X = 381;
+export const GRAVESTONES_VIEW_Y = 509;
 
 const page = () => {
     const [points, setPoints] = useState<Point[]>([]);
